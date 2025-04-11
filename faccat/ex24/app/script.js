@@ -8,6 +8,7 @@
  * 3% se vendeu menos que 1500 e 3% de 1500 mais 5% do restante se vender 
  * mais que 1500
  */
+
 let salarioFixo = parseFloat(prompt("Qual o seu salário fixo?"));
 let totalVendido = parseFloat(prompt("Qual o total de vendas efetuadas?"));
 let comissao = 0; //comissao será armazenada aqui após calculada
