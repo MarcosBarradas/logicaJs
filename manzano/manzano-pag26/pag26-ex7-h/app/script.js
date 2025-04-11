@@ -4,15 +4,12 @@
  * @professor Jailson Costa
  * @student Marcos Vinicius
  * @date 11/04/2025
- * @description Algoritmo lê quatro números inteiros e apresentar o resultado
- * da adição e multiplicação, baseando-se na
- * utilização do conceito da propriedade distributiva.
+ * @description calcula e apresenta o volume de uma caixa retangular,
+ * por meio da fórmula VOLUME  <- COMPRIMENTO * LARGURA * ALTURA.
  */
 
-let a = parseInt(prompt("Digite o primeiro número: "));
-let b = parseInt(prompt("Digite o segundo número: "));
-let c = parseInt(prompt("Digite o terceiro número: "));
-let d = parseInt(prompt("Digite o quarto número: "));
-
-alert(`A + B = ${a + b}`);
-alert(`A * B = ${a * b}`);
+let comprimento = parseFloat(prompt("Digite o comprimento da caixa: "));
+let largura = parseFloat(prompt("Digite a largura da caixa: "));
+let altura = parseFloat(prompt("Digite a altura da caixa: "));
+let volume = comprimento * largura * altura;
+alert(`O volume da caixa é: ${volume} m³`);
