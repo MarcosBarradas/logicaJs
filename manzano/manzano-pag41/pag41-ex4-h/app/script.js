@@ -1,31 +1,37 @@
 /**
- * @file pag41-ex4-a.js
+ * @file pag41-ex4-h.js
  * @discipline React
  * @professor Jailson Costa
  * @student Marcos Vinicius
  * @date 11/04/2025
- * @description 
+ * @description Lê cinco inteiros e identifica o maior e o menor valor.
 */
 
-let mes = prompt("Digite o mês do ano (1-12): ");
-switch (true) {
-    case mes >= 1 && mes <= 3:
-        alert("O mês " + mes + "É verão!");
-        break;
-    case mes >= 4 && mes <= 6:
-        alert("O mês " + mes + "É outono!");
-        break;
-    case mes >= 7 && mes <= 9:
-        alert("O mês " + mes + "É inverno!");
-        break;
-    case mes >= 10 && mes <= 12:
-        alert("O mês " + mes + "É primavera!");
-        break;
-    default:
-        alert("Mês inválido! Digite um número entre 1 e 12.");
-        break;
+let numero1 = parseFloat(prompt("Digite o primeiro número: "));
+let numero2 = parseFloat(prompt("Digite o segundo número: "));
+let numero3 = parseFloat(prompt("Digite o terceiro número: "));
+let numero4 = parseFloat(prompt("Digite o quarto número: "));
+let numero5 = parseFloat(prompt("Digite o quinto número: "));
+let numeros = [numero1, numero2, numero3, numero4, numero5];
+let maior = 0;
+let menor = 0;
+
+
+numeros.forEach((numero, index) => {
+
+    if (index == 0) {
+        maior = numero;
+        menor = numero;
+    } else {
+        if (numero > maior) { //compara cada numero com o maior encontrado até agora
+            //se for maior que o maior encontrado até agora, então é o novo maior
+            maior = numero;
+        } else if (numero < menor) { //se não foi maior, compara para ver se é o menor seguindo a mesma lógica
+            menor = numero;
+        }
+    }
 }
+)
 
-
-
+alert(`O maior número é ${maior} e o menor número é ${menor}`);
 

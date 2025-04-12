@@ -1,31 +1,17 @@
 /**
- * @file pag41-ex4-a.js
+ * @file pag41-ex4-j.js
  * @discipline React
  * @professor Jailson Costa
  * @student Marcos Vinicius
  * @date 11/04/2025
- * @description 
+ * @description Lê um valor  entre a faixa de 1 a 9. Após a
+ * leitura o programa incdica uma de duas mensagens: "O
+ * valor está na faixa permitida", caso o usuário forneça o valor nesta faixa,
+ * ou a mensagem "O valor está fora da faixa permitida", caso o usuário forneça
+ * valores menores que 1 ou maiores que 9.
 */
 
-let mes = prompt("Digite o mês do ano (1-12): ");
-switch (true) {
-    case mes >= 1 && mes <= 3:
-        alert("O mês " + mes + "É verão!");
-        break;
-    case mes >= 4 && mes <= 6:
-        alert("O mês " + mes + "É outono!");
-        break;
-    case mes >= 7 && mes <= 9:
-        alert("O mês " + mes + "É inverno!");
-        break;
-    case mes >= 10 && mes <= 12:
-        alert("O mês " + mes + "É primavera!");
-        break;
-    default:
-        alert("Mês inválido! Digite um número entre 1 e 12.");
-        break;
-}
-
-
-
-
+let numero = parseInt(prompt("Digite um número entre 1 e 9: "));
+let mensagem = `O número ${numero} está `;
+mensagem += numero >= 1 && numero <= 9 ? "na faixa permitida." : "fora da faixa permitida.";
+alert(mensagem);

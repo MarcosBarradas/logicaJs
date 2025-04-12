@@ -1,31 +1,25 @@
 /**
- * @file pag41-ex4-a.js
+ * @file pag41-ex4-g.js
  * @discipline React
  * @professor Jailson Costa
  * @student Marcos Vinicius
  * @date 11/04/2025
- * @description 
+ * @description  Lê quatro inteiros e apresenta os números que são
+ * divisíveis por 2 e 3.
 */
 
-let mes = prompt("Digite o mês do ano (1-12): ");
-switch (true) {
-    case mes >= 1 && mes <= 3:
-        alert("O mês " + mes + "É verão!");
-        break;
-    case mes >= 4 && mes <= 6:
-        alert("O mês " + mes + "É outono!");
-        break;
-    case mes >= 7 && mes <= 9:
-        alert("O mês " + mes + "É inverno!");
-        break;
-    case mes >= 10 && mes <= 12:
-        alert("O mês " + mes + "É primavera!");
-        break;
-    default:
-        alert("Mês inválido! Digite um número entre 1 e 12.");
-        break;
-}
+let numero1 = parseFloat(prompt("Digite o primeiro número: "));
+let numero2 = parseFloat(prompt("Digite o segundo número: "));
+let numero3 = parseFloat(prompt("Digite o terceiro número: "));
+let numero4 = parseFloat(prompt("Digite o quarto número: "));
 
+let numeros = [numero1, numero2, numero3, numero4];
+let mensagem = "";
 
+numeros.forEach((numero) => {
+    if (numero % 2 == 0 && numero % 3 == 0) {
+        mensagem += `O número ${numero} é divisível por 2 e 3.\n`;
+    } 
+} )
 
-
+alert(mensagem || "Nenhum número é divisível por 2 e 3.");
