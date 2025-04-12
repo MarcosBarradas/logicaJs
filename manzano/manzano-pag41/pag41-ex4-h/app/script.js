@@ -4,7 +4,7 @@
  * @professor Jailson Costa
  * @student Marcos Vinicius
  * @date 11/04/2025
- * @description Lê cinco inteiros e identifica o maior e o menor valor.
+ * @description Lê cinco naturais e identifica o maior e o menor valor.
 */
 
 let numero1 = parseFloat(prompt("Digite o primeiro número: "));
@@ -19,7 +19,7 @@ let menor = 0;
 
 numeros.forEach((numero, index) => {
 
-    if (index == 0) {
+    if (index == 0) {//se nao o menor sempre será 0 porque nenhum dos numeros digitados será menor que 0
         maior = numero;
         menor = numero;
     } else {
