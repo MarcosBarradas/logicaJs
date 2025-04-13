@@ -4,8 +4,11 @@
  * @professor Jailson Costa
  * @student Marcos Vinicius
  * @date 12/04/2025
- * @description 
+ * @description Lê valores positivos inteiros até que um valor negativo
+ * seja informado. Ao final apresenta o maior e o menor valores informados pelo
+ * usuário.
 */
+
 //var
 let numero;
 let maior;
@@ -33,3 +36,4 @@ while (numero >= 0) {
 
 alert(`O maior número é: ${maior}\n
   O menor número é: ${menor}`);
+//FimAlgoritmo
