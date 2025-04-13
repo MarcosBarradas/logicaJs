@@ -1,0 +1,1 @@
+todos esses exercícios foram resolvidos, obrigatoriamente, com laço "DO" while.
