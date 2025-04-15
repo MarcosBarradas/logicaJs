@@ -18,4 +18,4 @@ for (let i = 1; i < 10; i+=2) {
 }
 
 
-alert(`fatorial de todos os ímpares de 1 a 10: ${fatorial}`);
+alert(`fatorial de todos os ímpares de 1 a 10: ${somatorio}`);
